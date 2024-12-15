@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".GameActivity">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textStyle="bold"
+        android:textSize="24sp"
+        android:layout_margin="3dp"
+        android:layout_gravity="center"
+        android:padding="6dp"
+        android:textColor="#7521b7" />
+
+    <!-- Game Status -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/game_status_text"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:layout_margin="4dp"
+        android:text="Juego no iniciado"
+        android:textColor="#b2babb" />
+
+    <!-- Score Display -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/score_text"
+        android:gravity="center"
+        android:textSize="16sp"
+        android:layout_margin="6dp"
+        android:padding="6dp"
+        android:background="#f2f2f2"
+        android:text="Human: 0 | Machine: 0 | Ties: 0"
+        android:textColor="#333333" />
+
+    <!-- Game Board -->
+    <GridLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="3"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="0"
+            android:id="@+id/btn_0"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="1"
+            android:id="@+id/btn_1"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="2"
+            android:id="@+id/btn_2"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="3"
+            android:id="@+id/btn_3"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="4"
+            android:id="@+id/btn_4"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="5"
+            android:id="@+id/btn_5"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="6"
+            android:id="@+id/btn_6"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="7"
+            android:id="@+id/btn_7"
+            tools:text="X" />
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="8dp"
+            android:textSize="60sp"
+            android:tag="8"
+            android:id="@+id/btn_8"
+            tools:text="X" />
+
+    </GridLayout>
+
+    <!-- Start Game Button -->
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:text="Iniciar Juego"
+        android:id="@+id/start_game_btn" />
+
+</LinearLayout>
